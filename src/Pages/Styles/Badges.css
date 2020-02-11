@@ -1,4 +1,4 @@
-.BadgeNew_hero {
+.Badges_hero {
     width: 100%;
     padding: 2rem 0;
     background: url('../../Images/warCraft_4.png'), #1B1B25;
@@ -6,9 +6,12 @@
     background-repeat: no-repeat;
     margin-bottom: 1rem;
     color: #ffffff;
-    display: flex;
   }
-  .BadgeNew_image{
+  .Badges_container{
+    display: flex;
+    justify-content: center;
+  }
+  .Badges_image{
     height: 135px;
     width: 150px;
     margin: 0 2rem;

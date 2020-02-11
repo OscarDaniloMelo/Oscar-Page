@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import 'bootstrap/dist/css/bootstrap.css'
-import BadgeNew from './Pages/BadgeNew'
+import App from './Components/App'
+
 const container = document.getElementById('app')
 
-ReactDOM.render(<BadgeNew />, container)
+ReactDOM.render(<App />, container)
