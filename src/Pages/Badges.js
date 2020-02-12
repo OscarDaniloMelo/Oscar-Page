@@ -2,22 +2,41 @@ import React from 'react'
 import Logo from '../Images/warCraft_3.png'
 import './Styles/Badges.css'
 import BadgesList from '../Components/BadgesList'
+import PageLoading from '../Components/PageLoading'
+import PageError from '../Components/PageError'
 import { Link } from 'react-router-dom'
+import api from '../api'
 
 
 class Badges extends React.Component {
     state = {
-        data: [{
-            id: "63c03386",
-            firstName: "Daphney",
-            lastName: "Torphy",
-            email: "Ron61@hotmail.com",
-            jobTitle: "National Marker",
-            twitter: "DaphneyTorphy96",
-            avatarUrl: "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
-            }]
+        loading: true,
+        error: null,
+        data: undefined,
+    } 
+
+    componentDidMount() {
+        this.fetchData()
     }
+
+    fetchData = async () => {
+        this.setState({loading: true, error: null})
+
+        try {
+            const data = await api.badges.list()
+            this.setState({loading: false, data: data})
+        } catch (error) {
+            this.setState({loading: false, error: error})
+        }
+    }
+
     render () {
+        if (this.state.loading) {
+            return <PageLoading />
+        }
+        if (this.state.error) {
+            return <PageError error={this.state.error} />
+        }
         return (
             <React.Fragment>
                 <div className="Badges">

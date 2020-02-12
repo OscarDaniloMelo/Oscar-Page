@@ -11,17 +11,17 @@ class BadgeFrom extends React.Component{
     handleClick = (e) => {
         console.log("button was clicked")
     }
-    handleSubmit = (e) => {
-        e.preventDefault()
-        console.log("form was submitted")
-    }
+    // handleSubmit = (e) => {
+    //     e.preventDefault()
+    //     console.log("form was submitted")
+    // }
 
     render(){
         return(
             <div>
                 <h1>New Observer or Visitor</h1>
 
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.props.onSubmit}>
                     <div className="from-group">
                         <label>First Name</label>
                         <input onChange={this.props.onChange} 

@@ -1,8 +1,9 @@
 import React from 'react'
 import './Styles/BadgeNew.css'
-import Badge from '../Components/Badges'
+import Badge from '../Components/Badge'
 import BadgeForm from '../Components/BadgeForm'
 import Logo from '../Images/warCraft_3.png'
+import api from '../api'
 
 class BadgeNew extends React.Component{
     state={ form : {
@@ -22,6 +23,18 @@ class BadgeNew extends React.Component{
         })
     }
 
+    handleSubmit = async e => {
+        e.preventDefault()
+        this.setState({ loading: true, error: null })
+
+        try {
+            await api.badges.create(this.state.form)
+            this.setState({ loading: false })
+        } catch (error) {
+            this.setState({ loading: false, error: error })
+        }
+    }
+
     render(){
         return(
             <React.Fragment>
@@ -33,17 +46,18 @@ class BadgeNew extends React.Component{
                     <div className="row">
                         <div className="col-6">
                             <Badge  
-                                    firstName ={this.state.form.firstName}
-                                    lastName ={this.state.form.lastName}
-                                    jobTitle ={this.state.form.jobTitle}
-                                    twitter ={this.state.form.twitter}
-                                    email ={this.state.form.email}
+                                    firstName ={this.state.form.firstName || 'FIRST_NAME'}
+                                    lastName ={this.state.form.lastName || 'LAST_NAME'}
+                                    jobTitle ={this.state.form.jobTitle || 'JOB_TITLE'}
+                                    twitter ={this.state.form.twitter || 'Twitter'}
+                                    email ={this.state.form.email || 'EMAIL'}
                                     avatarUrl = "http://2.gravatar.com/avatar/89d989572ab2cccb2319e7ed2c02a8e0">
                             </Badge>
                         </div>
                         <div className="col-6">
                             <BadgeForm 
                                 onChange={this.handleChange}
+                                onSubmit={this.handleSubmit}
                                 fromValues={this.state.form} 
                             />
                         </div>
