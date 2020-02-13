@@ -8,7 +8,7 @@ class Navbar extends React.Component{
         return (
             <div className="Navbar">
                 <div className="container-fluid">
-                    <Link className="Navbar_brand" to="/">
+                    <Link className="Navbar_brand" to="/badges/new">
                         <img className="Navbar_logo" src={Logo} alt="logo" />
                         <span className="font-weight-bold">Home</span>
                     </Link>

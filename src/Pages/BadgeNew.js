@@ -2,11 +2,15 @@ import React from 'react'
 import './Styles/BadgeNew.css'
 import Badge from '../Components/Badge'
 import BadgeForm from '../Components/BadgeForm'
+import PageLoading from '../Components/PageLoading'
 import Logo from '../Images/warCraft_3.png'
 import api from '../api'
 
 class BadgeNew extends React.Component{
-    state={ form : {
+    state={ 
+        loading: false,
+        error: null,
+        form : {
         firstName: '',
         lastName: '',
         email: '',
@@ -30,12 +34,16 @@ class BadgeNew extends React.Component{
         try {
             await api.badges.create(this.state.form)
             this.setState({ loading: false })
+            this.props.history.push('/badges')
         } catch (error) {
             this.setState({ loading: false, error: error })
         }
     }
 
     render(){
+        if (this.state.loading){
+            return <PageLoading />
+        }
         return(
             <React.Fragment>
                 <div className="BadgeNew_hero">
@@ -58,7 +66,8 @@ class BadgeNew extends React.Component{
                             <BadgeForm 
                                 onChange={this.handleChange}
                                 onSubmit={this.handleSubmit}
-                                fromValues={this.state.form} 
+                                fromValues={this.state.form}
+                                error={this.state.error} 
                             />
                         </div>
                     </div>

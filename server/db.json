@@ -1,0 +1,96 @@
+{
+  "badges": [
+    {
+      "id": "250fe715-88d4-4c18-95e7-62a6a097803a",
+      "firstName": "Zoe",
+      "lastName": "Grant",
+      "email": "ZoeGrant@example.com",
+      "jobTitle": "Corporate Branding Representative",
+      "twitter": "ZoieGrant05512-2019",
+      "avatarUrl": "https://www.gravatar.com/avatar/0fc6d5ee2ee176d4581acf6a7e5644cc?d=identicon"
+    },
+    {
+      "id": "f1183526-aff1-46da-8bfb-976563c6f696",
+      "firstName": "Karlee",
+      "lastName": "Satterfield",
+      "email": "KarleeSatterfield@example.com",
+      "jobTitle": "Chief Accounts Agent",
+      "twitter": "KarleeSatterfield32692-9732",
+      "avatarUrl": "https://www.gravatar.com/avatar/c2d679f9b44e1869548ab95aac18b7c9?d=identicon"
+    },
+    {
+      "id": "49026077-38f1-42e4-9f00-e230e04effa9",
+      "firstName": "Ernie",
+      "lastName": "Schmidt",
+      "email": "Shemar63@yahoo.com",
+      "jobTitle": "Dynamic Accounts Coordinator",
+      "twitter": "ErnieSchmidt56445-6854",
+      "avatarUrl": "https://www.gravatar.com/avatar/6a7e6f60ad63c102322894ab94a26f2f?d=identicon"
+    },
+    {
+      "id": "a6aeca9b-a7c1-45d2-b970-0121c682402a",
+      "firstName": "Kelly",
+      "lastName": "Corkery",
+      "email": "Van_Schimmel@yahoo.com",
+      "jobTitle": "Dynamic Tactics Liaison",
+      "twitter": "KellyCorkery06275-3676",
+      "avatarUrl": "https://www.gravatar.com/avatar/00e35de53a06a655fe5b6ac8b96bdb84?d=identicon"
+    },
+    {
+      "firstName": "Richard",
+      "lastName": "Kaufman",
+      "email": "richardbkaufman@gmail.com",
+      "jobTitle": "Frontend Engineer",
+      "twitter": "sparragus",
+      "id": "DbY1vXd"
+    },
+    {
+      "firstName": "Carolynn",
+      "lastName": "Kaufman",
+      "email": "carolynn@example.com",
+      "jobTitle": "Lawyer",
+      "twitter": "sparragus",
+      "id": "7medAJ4"
+    },
+    {
+      "firstName": "Snoopy",
+      "lastName": "Kaufman",
+      "email": "snoopy@example.com",
+      "jobTitle": "Super Dog",
+      "twitter": "snoopysuperdog",
+      "id": "Tab9I7W"
+    },
+    {
+      "firstName": "Manuel",
+      "lastName": "Quiñonez",
+      "email": "manny2007q@example.com",
+      "jobTitle": "Productor de Cine",
+      "twitter": "mannyfilms1",
+      "id": "n8SkH8I"
+    },
+    {
+      "firstName": "María José",
+      "lastName": "Sánchez",
+      "email": "majosanchez@example.com",
+      "jobTitle": "Historiadora del Arte",
+      "twitter": "majosanchez",
+      "id": "QfvvQpO"
+    },
+    {
+      "firstName": "Mónica",
+      "lastName": "Guzmán",
+      "email": "monicaguzman@example.com",
+      "jobTitle": "Filósofa del Feminismo",
+      "twitter": "monicaguzman",
+      "id": "bACOxRF"
+    },
+    {
+      "firstName": "Monserrat",
+      "lastName": "López",
+      "email": "monselopez@example.com",
+      "jobTitle": "Agente de Ventas",
+      "twitter": "monse",
+      "id": "mTqZDKW"
+    }
+  ]
+}
