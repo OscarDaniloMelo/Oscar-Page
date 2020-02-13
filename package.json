@@ -1,18 +1,7 @@
 {
-  "name": "pagina_web",
+  "name": "platzi-badges",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.4.1",
-    "md5": "^2.2.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1"
-  },
   "scripts": {
     "start": "npm-run-all -p client server",
     "client": "react-scripts start",
@@ -22,19 +11,27 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "md5": "^2.2.1",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.5",
+    "run": "^1.4.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "json-server": "^0.14.2",
+    "npm-run-all": "^4.1.5"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
