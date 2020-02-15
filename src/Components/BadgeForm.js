@@ -19,8 +19,6 @@ class BadgeFrom extends React.Component{
     render(){
         return(
             <div>
-                <h1>New Observer or Visitor</h1>
-
                 <form onSubmit={this.props.onSubmit}>
                     <div className="from-group">
                         <label>First Name</label>

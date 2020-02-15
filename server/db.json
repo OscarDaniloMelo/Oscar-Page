@@ -1,15 +1,6 @@
 {
   "badges": [
     {
-      "id": "250fe715-88d4-4c18-95e7-62a6a097803a",
-      "firstName": "Zoie",
-      "lastName": "Grant",
-      "email": "Efrain_Gaylord6@yahoo.com",
-      "jobTitle": "Corporate Branding Representative",
-      "twitter": "ZoieGrant05512-2019",
-      "avatarUrl": "https://www.gravatar.com/avatar/0fc6d5ee2ee176d4581acf6a7e5644cc?d=identicon"
-    },
-    {
       "id": "22330587-c700-4d00-911d-91de63db1f42",
       "firstName": "Dustin",
       "lastName": "Stehr",
@@ -68,6 +59,14 @@
       "jobTitle": "Super Dog",
       "twitter": "snoopysuperdog",
       "id": "Tab9I7W"
+    },
+    {
+      "firstName": "Oscar Danilo",
+      "lastName": "Melo Nieto",
+      "email": "lilo921030@gmail.com",
+      "jobTitle": "Frontend Development Beginner",
+      "twitter": "oscard110",
+      "id": "uuO4QJO"
     }
   ]
 }
