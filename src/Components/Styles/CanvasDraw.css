@@ -1,0 +1,17 @@
+.canvasDraw{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Draw{
+    border: solid black;
+    border-radius: 2%;
+}
+.canvasDraw h1{
+    font-size: 2rem;
+    color:rgb(6,93,147); 
+}
+.canvasDraw p{
+    font-size: 1.5rem;
+    color: rgb(121,231,223);
+}
